@@ -5,6 +5,7 @@
  * @args: The va_list containing the arguments.
  * @params: The pointer to the params_t struct (not used in this function).
  * Return: The number of characters printed.
+ * Done by Boutaina and Ali.
  */
 int print_rev_string(va_list args, params_t __attribute__((unused)) *params)
 {

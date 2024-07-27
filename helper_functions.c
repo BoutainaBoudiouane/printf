@@ -4,6 +4,7 @@
  * put_char - Function to write a character to the standard output.
  * @c: The character to be written.
  * Return: On success, returns 1. Otherwise, returns -1.
+ * Done by Boutaina and Ali.
  */
 int put_char(int c)
 {

@@ -5,6 +5,7 @@
  * @args: va_list pointing to the character argument.
  * @params: Pointer to the parameters structure.
  * Return: Number of characters printed (always 1 for a single char).
+ * Done by Boutaina and Ali.
  */
 int print_char(va_list args, params_t *params)
 {

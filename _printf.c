@@ -4,6 +4,7 @@
  * _printf - Custom printf function that formats and prints output.
  * @format: A pointer to a string containing format specifiers.
  * Return: The number of characters printed.
+ * Done by Boutaina and Ali.
  */
 int _printf(const char *format, ...)
 {

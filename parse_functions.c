@@ -46,14 +46,24 @@ const char *parse_flags(const char *p_flag, params_t *params)
 const char *parse_width(const char *p_width, params_t *params, va_list args)
 {
 	unsigned int width = 0;
+	int width_val;
 	va_list args_copy;
 
 	va_copy(args_copy, args);
-	if (*p_width == 42)
-		width = va_arg(args_copy, unsigned int), p_width++;
+	if (*p_width == '*')
+	{
+		width_val = va_arg(args_copy, int);
+		if (width_val < 0)  // Handle negative width values
+			width = 0;     // Or handle it as needed
+		else
+			width = (unsigned int)width_val;
+		p_width++;
+	}
 	else
-		while (*p_width >= 48 && *p_width <= 57)
-			width = width * 10 + (*p_width - 48), p_width++;
+	{
+		while (*p_width >= '0' && *p_width <= '9')
+			width = width * 10 + (*p_width++ - '0');
+	}
 	params->width = width;
 	return (p_width);
 }

@@ -14,8 +14,7 @@ int _printf(const char *format, ...)
 	params_t params;
 
 	va_start(args_p, format);
-	if (!format || (format[0] == 37 &&
-					(!format[1] || (format[1] == 32 && !format[2]))))
+	if (!format || (format[0] == 37 &&(!format[1] || (format[1] == 32 && !format[2]))))
 		return (-1);
 	for (; *str; str++)
 	{

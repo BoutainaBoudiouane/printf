@@ -5,7 +5,7 @@
  *      for the current character
  * @p_specifier: Pointer to the current position in the format specifier
  * Return: Pointer to the appropriate specifier function, NULL if not found
- * Done by Boutaina and Ali.
+ * The team project done by Boutaina and Ali.
  */
 int (*get_specifier(const char *p_specifier))(va_list args, params_t *params)
 {

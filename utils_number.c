@@ -6,7 +6,7 @@
  * @base: The base to use for conversion.
  * @flags: Flags to control conversion behavior.
  * Return: A pointer to the string representation of the converted number.
- * Done by Boutaina and Ali.
+ * The team project done by Boutaina and Ali.
  */
 char *convert_to(long int nbr, int base, int flags)
 {

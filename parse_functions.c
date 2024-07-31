@@ -6,7 +6,7 @@
  * @params: Pointer to the params_t structure to update the flags
  * Return: Pointer to the next position in the format specifier
  *      after parsing the flags
- * Done by Boutaina and Ali.
+ * The team project done by Boutaina and Ali.
  */
 const char *parse_flags(const char *p_flag, params_t *params)
 {

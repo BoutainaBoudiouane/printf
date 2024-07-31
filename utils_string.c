@@ -6,7 +6,7 @@
  * @stop: Pointer to the end of the character range.
  * @except: Pointer to the character to exclude from printing.
  * Return: Number of characters printed.
- * Done by Boutaina and Ali.
+ * The team project done by Boutaina and Ali.
  */
 int print_to(const char *start, const char *stop, const char *except)
 {
